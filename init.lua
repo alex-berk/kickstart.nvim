@@ -44,6 +44,12 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+local map = vim.api.nvim_set_keymap
+map('n', '<Leader>o', 'o<Escape>', {noremap = true, silent = false})
+map('n', '<Leader>O', 'O<Escape>', {noremap = true, silent = false})
+map('n', '<c-d>', '<c-d>zz', {noremap = true, silent = false})
+map('n', '<c-u>', '<c-u>zz', {noremap = true, silent = false})
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -278,6 +284,7 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
