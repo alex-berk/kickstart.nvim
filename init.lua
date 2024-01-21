@@ -53,6 +53,7 @@ map('n', '<c-d>', '<c-d>zz', { noremap = true, silent = false })
 map('n', '<c-u>', '<c-u>zz', { noremap = true, silent = false })
 map('n', 'go', 'd$o<Escape>p', { noremap = true, silent = false })
 map('n', 'gO', 'd^O<Escape>p', { noremap = true, silent = false })
+map('n', '<c-s>', '<c-u>', { noremap = true, silent = false })
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
